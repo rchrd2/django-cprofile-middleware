@@ -26,7 +26,7 @@ class ProfilerMiddleware(object):
     http://www.slideshare.net/zeeg/django-con-high-performance-django-presentation.
     """
     def can(self, request):
-        return settings.DEBUG and 'prof' in request.GET and \
+        return 'prof' in request.GET and \
             request.user is not None and request.user.is_staff
 
     def process_view(self, request, callback, callback_args, callback_kwargs):
