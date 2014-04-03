@@ -8,7 +8,8 @@ I found a simple example on @dcramer's [slideshare](http://www.slideshare.net/ze
 ## Installing
 
 ```bash
-$ pip install django-cprofile-middleware
+$ pip install -e git+git://github.com/rchrd2/django-cprofile-middleware.git#egg=django-cprofile-middleware
+
 ```
 
 Then add ```django_cprofile_middleware.middleware.ProfilerMiddleware``` to the end your ```MIDDLEWARE_CLASSES```. 
